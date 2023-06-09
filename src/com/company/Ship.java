@@ -1,11 +1,9 @@
 package com.company;
 
-public class Ship extends Transport{
+public class Ship implements Transport {
 
-    String name;
-    public Ship(int speed, int loud_capacity, String name) {
-        this.speed = speed;
-        this.load_capacity = loud_capacity;
-        this.name = name;
+    @Override
+    public void drive() {
+        System.out.println("Drive ship");
     }
 }

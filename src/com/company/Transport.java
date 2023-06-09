@@ -1,6 +1,5 @@
 package com.company;
 
-public abstract class Transport {
-    int speed;
-    int load_capacity;
+public interface Transport {
+    void drive();
 }
